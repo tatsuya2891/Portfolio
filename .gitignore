@@ -1,2 +1,4 @@
-.frontend/node_modules/
-.infra/mysql/
+node_modules/
+infra/
+vendor/
+.env
