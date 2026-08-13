@@ -1,0 +1,13 @@
+---
+import DefaultLayout from "../../layouts/DefaultLayout.astro";
+import WorkCard from "../../components/WorkCard.astro";
+import { getWorks } from "../../services/workService";
+
+const works = await getWorks();
+---
+
+<DefaultLayout>
+  <h2>Works</h2>
+
+  {works.map((work) => <WorkCard work={work} />)}
+</DefaultLayout>
